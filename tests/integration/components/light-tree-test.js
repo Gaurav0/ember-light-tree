@@ -213,7 +213,5 @@ module('Integration | Component | light-tree', function(hooks) {
     assert.equal(findAll('.light-tree-node')[3].querySelector('.light-tree-label').textContent.trim(), 'First Grand Child');
 
     assert.equal(findAll('input[type=checkbox]').length, 4, '4 checkboxes, one for each node');
-
-    await this.pauseTest();
   });
 });
